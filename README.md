@@ -30,7 +30,7 @@ Deleted: sha256:b0f07c82b633470dc22c13ce66e45e5c3d7e49bf8181ad32c1c5f89c8ec04d84
 ### Use the image to create a new container
 
 ```bash
-❯ docker run -i -t -p 5433:5432 -e POSTGRES_PASSWORD=123456 postgres13-rum
+❯ docker run -it -p 5433:5432 -e POSTGRES_PASSWORD=123456 postgres13-rum
 ```
 
 #### View all containers
@@ -52,4 +52,10 @@ Type "help" for help.
 postgres=# create extension rum;
 CREATE EXTENSION
 postgres=#
+```
+
+### Start a container
+
+```bash
+> docker start -i 1df18a504ddc
 ```
